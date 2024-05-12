@@ -1,8 +1,5 @@
 const Recipe = require('../models/recipe');
 
-// Controller functions for managing recipes
-
-// Example GET route for fetching all recipes
 exports.getAllRecipes = async (req, res, next) => {
   try {
     const recipes = await Recipe.find();
@@ -12,7 +9,6 @@ exports.getAllRecipes = async (req, res, next) => {
   }
 };
 
-// Example POST route for adding a new recipe
 exports.addRecipe = async (req, res, next) => {
   try {
     const { title, ingredients, instructions, category } = req.body;
@@ -24,4 +20,4 @@ exports.addRecipe = async (req, res, next) => {
   }
 };
 
-// More controller functions for updating and deleting recipes...
+

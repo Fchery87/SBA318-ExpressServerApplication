@@ -20,7 +20,6 @@ const recipeSchema = new mongoose.Schema({
   }
 });
 
-// Create the Recipe model from the schema
 const Recipe = mongoose.model('Recipe', recipeSchema);
 
 module.exports = Recipe;

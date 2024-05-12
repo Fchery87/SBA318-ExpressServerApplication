@@ -13,6 +13,6 @@ const recipes = [
       instructions: 'Slice tomatoes and fresh mozzarella cheese. Arrange tomato and mozzarella slices on a plate, alternating with fresh basil leaves. Drizzle with balsamic vinegar and olive oil. Season with salt and pepper.',
       category: 'Salad'
     },
-    // Add more sample recipes as needed
+    
   ];
   
