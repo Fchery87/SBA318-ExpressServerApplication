@@ -7,12 +7,17 @@ const recipeRoutes = require('./routes/recipeRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 
 const app = express();
+const port = 3000;
 
 // Middleware
 app.use(bodyParser.json());
 app.use(logger);
 
 // Routes
+app.use('/', (req, res) => {
+  res.send('Welcome to my Recipe Book');
+});
+
 app.use('/users', userRoutes);
 app.use('/recipes', recipeRoutes);
 app.use('/categories', categoryRoutes);
@@ -20,7 +25,6 @@ app.use('/categories', categoryRoutes);
 // Error Handling Middleware
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
