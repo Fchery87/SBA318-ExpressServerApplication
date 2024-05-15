@@ -3,174 +3,170 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: poppins, sans-serif;
     line-height: 1.6;
-  }
-  
-  header {
+}
+
+header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     display: flex;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin-right: 1rem;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-  }
+}
 
-  /* Add this CSS to your existing styles */
-
-/* Hide the dropdown menu by default */
+/* Dropdown menu styles */
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #0c0c0c;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute; /* Position dropdown absolutely */
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-/* Position the dropdown menu */
 .dropdown-menu li {
-  position: relative;
+    padding: 8px 12px;
+    position: relative;
 }
 
-/* Show the dropdown menu when the parent li is hovered over */
 nav ul li:hover .dropdown-menu {
-  display: block;
+    display: block; /* Show dropdown on hover */
 }
 
-/* Add some spacing between dropdown items */
-.dropdown-menu li {
-  padding: 8px 12px;
-}
-
-/* Change the background color of dropdown items on hover */
 .dropdown-menu li:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
-  
-  main {
+main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
-  }
-  
-  .recipe-list ul {
+}
+
+.recipe-list ul {
     list-style-type: none;
-  }
-  
-  .recipe-list li {
+}
+
+.recipe-list li {
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 1rem;
-  }
-  
-  .recipe-list .recipe-item {
+}
+
+.recipe-list .recipe-item {
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 1rem;
-  }
-  
-  .recipe-list .recipe-item h3 {
+}
+
+.recipe-list .recipe-item h3 {
     margin-bottom: 0.5rem;
-  }
-  
-  .recipe-list .recipe-item p {
+}
+
+.recipe-list .recipe-item p {
     margin-bottom: 0.5rem;
-  }
-  
-  .recipe-list .recipe-item h4 {
+}
+
+.recipe-list .recipe-item h4 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .recipe-list .recipe-item ul {
+}
+
+.recipe-list .recipe-item ul {
     margin-bottom: 0.5rem;
-  }
-  
-  .recipe-list .recipe-item ul li {
+}
+
+.recipe-list .recipe-item ul li {
     margin-bottom: 0.25rem;
-  }
-  
-  .recipe-list .recipe-item button {
+}
+
+.recipe-list .recipe-item button {
     background-color: #333;
     color: #fff;
     padding: 0.25rem 0.5rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .recipe-form form {
+}
+
+.recipe-form form {
     display: grid;
     grid-gap: 1rem;
-  }
-  
-  .recipe-form label {
+}
+
+.recipe-form label {
     font-weight: bold;
-  }
-  
-  .recipe-form input,
-  .recipe-form textarea,
-  .recipe-form select {
+}
+
+.recipe-form input,
+.recipe-form textarea,
+.recipe-form select {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .recipe-form button[type="submit"] {
+}
+
+.recipe-form button[type="submit"] {
     background-color: #333;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* Apply Poppins font to the category dropdown */
-  #category {
+}
+
+/* Apply Poppins font to the category dropdown */
+#category {
     font-family: 'Poppins', sans-serif;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
-  }
-  
-  /* Responsive Styles */
-  
-  /* For small screens (phones) */
-  @media only screen and (max-width: 600px) {
-    main {
-      padding: 0.5rem;
+}
+
+/* Responsive Styles */
+
+/* For small screens (phones) */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center align items */
     }
-  }
-  
-  /* For medium screens (tablets) */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Add specific styles for medium screens here */
-  }
-  
-  /* For large screens (desktops) */
-  @media only screen and (min-width: 1025px) {
-    /* Add specific styles for large screens here */
-  }
+
+    nav ul li {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 1rem; /* Add bottom margin */
+    }
+
+    .dropdown-menu {
+        position: static; /* Change position for mobile view */
+        display: none; /* Hide dropdown initially */
+    }
+
+    nav ul li:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+        position: static; /* Change position for mobile view */
+    }
+}
