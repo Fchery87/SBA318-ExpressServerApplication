@@ -1,18 +1,60 @@
 let recipes = [
-  // { id: 1, title: 'Recipe 1', description: 'Description for Recipe 1' },
-  // { id: 2, title: 'Recipe 2', description: 'Description for Recipe 2' },
-  // { id: 3, title: 'Recipe 3', description: 'Description for Recipe 3' }
-  { id: 1, name: 'Spaghetti Carbonara', ingredients: ['spaghetti', 'eggs', 'bacon', 'parmesan cheese'] },
-  { id: 2, name: 'Chicken Alfredo Pasta', ingredients: ['chicken', 'fettuccine', 'alfredo sauce', 'garlic'] },
-  { id: 3, name: 'Vegetable Stir Fry', ingredients: ['mixed vegetables', 'tofu', 'soy sauce', 'sesame oil'] },
-  { id: 4, name: 'Grilled Cheese Sandwich', ingredients: ['bread', 'cheese', 'butter'] },
-  { id: 5, name: 'Caprese Salad', ingredients: ['tomatoes', 'mozzarella cheese', 'basil', 'balsamic glaze'] },
-  { id: 6, name: 'Beef Tacos', ingredients: ['ground beef', 'taco seasoning', 'tortillas', 'lettuce', 'tomato', 'cheese'] },
-  { id: 7, name: 'Spinach and Feta Quiche', ingredients: ['pie crust', 'spinach', 'feta cheese', 'eggs', 'milk'] },
-  { id: 8, name: 'Margarita Pizza', ingredients: ['pizza dough', 'tomato sauce', 'mozzarella cheese', 'fresh basil'] },
-  { id: 9, name: 'Chocolate Chip Cookies', ingredients: ['flour', 'butter', 'sugar', 'chocolate chips', 'vanilla extract'] },
-  { id: 10, name: 'Classic Caesar Salad', ingredients: ['romaine lettuce', 'caesar dressing', 'croutons', 'parmesan cheese'] }
-
+  {
+    id: 1,
+    title: 'Jerk Chicken',
+    category: 'Main Course',
+    description: 'A spicy and flavorful Caribbean chicken dish.',
+    ingredients: ['Chicken', 'Scotch bonnet peppers', 'Allspice', 'Thyme', 'Garlic', 'Onion', 'Vinegar', 'Soy sauce'],
+    instructions: 'Marinate the chicken in a mixture of scotch bonnet peppers, allspice, thyme, garlic, onion, vinegar, and soy sauce. Grill until cooked through, and serve hot.'
+  },
+  {
+    id: 2,
+    title: 'Ackee and Saltfish',
+    category: 'Main Course',
+    description: 'Jamaica\'s national dish made with ackee fruit and salted cod.',
+    ingredients: ['Ackee', 'Salted cod', 'Onion', 'Tomato', 'Scotch bonnet pepper', 'Bell pepper', 'Thyme', 'Garlic'],
+    instructions: 'Soak the salted cod to remove excess salt, then boil until tender. Sauté onion, tomato, scotch bonnet pepper, bell pepper, thyme, and garlic. Add boiled ackee and flaked saltfish. Cook until heated through.'
+  },
+  {
+    id: 3,
+    title: 'Roti',
+    category: 'Main Course',
+    description: 'A flatbread originating from the Indian subcontinent, often served with curries or other dishes.',
+    ingredients: ['Whole wheat flour', 'Water', 'Oil', 'Salt', 'Curry filling (optional)'],
+    instructions: 'Mix whole wheat flour, water, oil, and salt to form a dough. Divide into balls and roll out into thin circles. Cook on a hot griddle until lightly browned. Serve with curry filling or other accompaniments.'
+  },
+  {
+    id: 4,
+    title: 'Callaloo',
+    category: 'Side Dish',
+    description: 'A traditional Caribbean dish made with leafy greens, often served as a side.',
+    ingredients: ['Callaloo leaves', 'Coconut milk', 'Onion', 'Tomato', 'Scotch bonnet pepper', 'Garlic', 'Thyme'],
+    instructions: 'Sauté onion, tomato, scotch bonnet pepper, garlic, and thyme. Add callaloo leaves and coconut milk. Simmer until the leaves are tender. Serve as a side dish.'
+  },
+  {
+    id: 5,
+    title: 'Coconut Rice and Peas',
+    category: 'Side Dish',
+    description: 'A classic Caribbean side dish made with rice, coconut milk, and kidney beans.',
+    ingredients: ['Rice', 'Coconut milk', 'Kidney beans', 'Coconut oil', 'Onion', 'Garlic', 'Thyme', 'Scotch bonnet pepper'],
+    instructions: 'Sauté onion, garlic, and thyme in coconut oil. Add rice, coconut milk, kidney beans, and scotch bonnet pepper. Cook until rice is tender. Serve hot.'
+  },
+  {
+    id: 6,
+    title: 'Plantain Chips',
+    category: 'Appetizer',
+    description: 'Crispy fried plantain slices, perfect as a snack or appetizer.',
+    ingredients: ['Green plantains', 'Oil', 'Salt'],
+    instructions: 'Peel and slice green plantains thinly. Fry in hot oil until golden brown and crispy. Drain on paper towels and sprinkle with salt. Serve as a snack or appetizer.'
+  },
+  {
+    id: 7,
+    title: 'Rum Punch',
+    category: 'Beverage',
+    description: 'A tropical cocktail made with rum, fruit juices, and grenadine.',
+    ingredients: ['Dark rum', 'Pineapple juice', 'Orange juice', 'Lime juice', 'Grenadine', 'Simple syrup', 'Angostura bitters'],
+    instructions: 'Mix dark rum, pineapple juice, orange juice, lime juice, grenadine, simple syrup, and a dash of angostura bitters. Serve over ice and garnish with a slice of lime or pineapple.'
+  }
 ];
 
 // GET all recipes
