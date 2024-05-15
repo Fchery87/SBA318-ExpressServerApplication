@@ -7,13 +7,11 @@ const recipeRoutes = require('./routes/recipeRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 
 const app = express();
-const port = 3000;
+const port = 3500;
 
-// Middleware
 app.use(bodyParser.json());
 app.use(logger);
 
-// Routes
 app.use('/', (req, res) => {
   res.send('Welcome to my Recipe Book');
 });
@@ -22,7 +20,6 @@ app.use('/users', userRoutes);
 app.use('/recipes', recipeRoutes);
 app.use('/categories', categoryRoutes);
 
-// Error Handling Middleware
 app.use(errorHandler);
 
 app.listen(port, () => {
