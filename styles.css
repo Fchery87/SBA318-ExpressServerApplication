@@ -32,6 +32,39 @@
     color: #fff;
     text-decoration: none;
   }
+
+  /* Add this CSS to your existing styles */
+
+/* Hide the dropdown menu by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #0c0c0c;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Position the dropdown menu */
+.dropdown-menu li {
+  position: relative;
+}
+
+/* Show the dropdown menu when the parent li is hovered over */
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Add some spacing between dropdown items */
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+/* Change the background color of dropdown items on hover */
+.dropdown-menu li:hover {
+  background-color: #ddd;
+}
+
   
   main {
     max-width: 800px;
