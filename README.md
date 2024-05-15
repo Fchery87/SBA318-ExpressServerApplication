@@ -5,7 +5,6 @@ This project is a Recipe Book application built using Node.js and Express. It al
 ## Table of Contents
 
 - [Features](#features)
-- [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [File Structure](#file-structure)
 - [Contributing](#contributing)
